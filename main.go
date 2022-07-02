@@ -1,4 +1,3 @@
-// hello
 package main
 
 import (
@@ -216,8 +215,6 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.POST("/initialize", postInitialize)
-
-	panic("パニック!!!!!!")
 
 	e.POST("/api/auth", postAuthentication)
 	e.POST("/api/signout", postSignout)
