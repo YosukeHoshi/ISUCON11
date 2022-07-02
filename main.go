@@ -217,6 +217,8 @@ func main() {
 
 	e.POST("/initialize", postInitialize)
 
+	panic("パニック!!!!!!")
+
 	e.POST("/api/auth", postAuthentication)
 	e.POST("/api/signout", postSignout)
 	e.GET("/api/user/me", getMe)
